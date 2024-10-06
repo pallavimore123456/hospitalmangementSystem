@@ -1,0 +1,24 @@
+.container{
+border: 1px solid black;
+height:400px;
+width:400px;
+background-image: linear-gradient(#ADD8E6,white);
+display: flex;
+justify-content:center;
+margin-left: 500px;
+margin-top: 3%;
+padding-left: 3%;
+}
+.box{
+display: flex;
+justify-items:center;
+
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+h2{
+  text-align: center;
+}
