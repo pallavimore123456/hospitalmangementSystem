@@ -1,0 +1,121 @@
+.container{
+    border: 1px solid transparent;
+    display: grid;
+    grid-gap: 20px;
+     grid-template-columns:400px 200px;
+    grid-template-rows:500px 500px 100px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+       "cd cd cd cd cd cd cd cd"
+       "ft ft ft ft ft ft ft ft"
+    ;
+      
+      
+    
+    }
+    button{
+        display: flex;
+       justify-content:center;
+        align-items: center;
+    }
+    
+    
+    #header{
+      grid-area: hd;
+      text-align:center;
+      position: relative;
+      
+        
+    }
+    .text{
+   border-radius: 10px;  
+     top: 60%;
+     left: 50%;
+    position: absolute;
+    font-size:large;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    color: black;
+    background-color: azure;
+   transition-property:background-color;
+   transition-duration:1s;
+     
+     
+    }
+    .text:hover{
+      background-color: darkgreen;
+      cursor:pointer;
+      
+
+    }
+    .button{
+      display: flex;
+      position:absolute;
+      top:10%;
+       
+
+       
+    }
+     #btn1{
+       margin-left:20px;
+     }
+     #header.button{
+       display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items: center;
+     }
+      
+     
+    #content{
+    grid-area: cd;
+    display: grid;
+     grid-template-rows: repeat(2,1fr);  
+    grid-template-columns: repeat(2,1fr); 
+    grid-gap:10px;
+    position: relative;
+    margin-top:1%;
+    
+    
+        
+        
+    }
+    #content.box:hover{
+       transition:all 1s;
+    
+    }
+    #content #box1:hover{
+       transition:1s;
+    
+    
+    }
+    
+    #footer{
+       grid-area:ft;
+       
+    }
+    .button{
+    
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin:300px;
+    
+    }
+    .buttonA{
+       padding-left:20px;
+    }
+    .buttonB{
+       padding-left: 10px;
+    }
+    .buttonC{
+       padding-left: 10px;
+    }
+     #boxA{
+       justify-self: center;
+        align-self: center;
+     }
+     .box{
+      border: 1px solid black;
+     }
+    
